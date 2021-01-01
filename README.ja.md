@@ -251,12 +251,12 @@ startwebui.pyを実行した後、ブラウザでアクセスすることがで�
 デフォルトのアドレスは```http://localhost:8080```です。
 
 ### コメントのフィルタリング
-运行filter.py即可   
-注意：必须要有**tv.bilibili.player.xml**文件才能进行弹幕过滤。
+filter.pyを実行してください
+注意:コメントのフィルタリングを行うには、tv.bilibili.player.xmlファイルが必要です
 
 ## 翻訳
-你可以在[Transifex](https://www.transifex.com/lifegpc/bili/)上为该程序提供翻译。  
-感谢Kum4423提供日语翻译。
+誰でも[Transifex](https://www.transifex.com/lifegpc/bili/)でこのプログラムの他言語の翻訳を提供することができます。  
+日本語訳を提供してくれたKum4423氏に感謝。
 
 ## その他
 完美支持**普通视频**的弹幕下载   
