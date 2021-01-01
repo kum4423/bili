@@ -244,11 +244,11 @@ start.pyを直接実行する
 ### prepare.py
 実行して、WEB UIの実行に必要なファイルの一部を取得します
 ランタイムは、javaに直接アクセスできることを保証します。  
-クラウドフレアのアンチボット検出が死んでいるため、自動で[compiler.jar](https://mvnrepository.com/artifact/com.google.javascript/closure-compiler/latest)を更新したりダウンロードしたりすることができなくなっています。~~（今のところアンチボットの検出はないようです）
+~~クラウドフレアのアンチボット検出が死んでいるため、自動で[这里](https://mvnrepository.com/artifact/com.google.javascript/closure-compiler/latest)更新したりダウンロードしたりすることができなくなっています~~（今のところアンチボットの検出はないようです）
 
 ### WEBユーザーインターフェース
-运行**startwebui.py**后，可以在浏览器访问。  
-默认地址为```http://localhost:8080```。
+startwebui.pyを実行した後、ブラウザでアクセスすることができます。  
+デフォルトのアドレスは```http://localhost:8080```です。
 
 ### コメントのフィルタリング
 运行filter.py即可   
