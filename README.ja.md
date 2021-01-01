@@ -209,11 +209,11 @@ UP主のすべてのチャンネルを解析して、ダウンロードするチ
 [regex](https://pypi.org/project/regex/)  
 [iso-639](https://pypi.org/project/iso-639/)  
 [pywin32](https://pypi.org/project/pywin32/)  
-用户名密码登录部分参考了[Bilibili-Toolkit](https://github.com/Hsury/Bilibili-Toolkit)的登录部分代码。
+ユーザー名・パスワードのログインセクションは、[Bilibili-Toolkit](https://github.com/Hsury/Bilibili-Toolkit)のログインセクションコードを参照しています。
 ### JavaScript依存ライブラリ
 [jQuery](https://jquery.com/)  
 [js-sha256](https://github.com/emn178/js-sha256)  
-[jsbn](http://www-cs-students.stanford.edu/~tjw/jsbn/)（注：已被合并到[```webuihtml/js(origin)/rsa.js```](webuihtml/js(origin)/rsa.js)）  
+[jsbn](http://www-cs-students.stanford.edu/~tjw/jsbn/)（注意：[```webuihtml/js(origin)/rsa.js```](webuihtml/js(origin)/rsa.js)にマージされています）  
 [js-base64](https://github.com/dankogai/js-base64)  
 [QRCode.js](https://github.com/davidshimjs/qrcodejs)  
 [Viewer.js](https://github.com/fengyuanchen/viewerjs)  
@@ -221,28 +221,30 @@ UP主のすべてのチャンネルを解析して、ダウンロードするチ
 [FileSaver.js](https://github.com/eligrey/FileSaver.js)
 ## ファイル構成
 ### cookies.json
-该文件保存了登录B站后获取到的cookies信息，用于程序保持登录B站（调用历史弹幕接口用以及下载720P及以上视频使用）   
+このファイルは、BiliBiliにログインした後に取得したクッキー情報を保存し、プログラムがBiliBiliにログインした状態を維持するために使用します（コメント履歴インターフェースを呼び出すため、また、720p以上の動画をダウンロードするために）   
 
 ### settings.json
-该文件保存了一些设置，可以运行**setsettings.py**来设置。
+このファイルは、いくつかのデフォルトの操作の設定を保持しており、setettings.pyを実行することで設定を変更・確認することができます。
 
 ### webui.json
-保存了WEB用户界面的设置。
+保存されたWEB UIの設定。
 
 ### sections.json
-当WEB用户界面打开密码验证时，存储会话信息。
+パスワード認証のためにWEBユーザーインターフェースを開いたときのセッション情報を保持します。
 
 ### tv.bilibili.player.xml
-该文件包括弹幕过滤规则。
-可以直接将在PC网页端播放器的弹幕过滤设定中导出的文件放至程序目录下，并确保文件名为**tv.bilibili.player.xml**。
+このファイルは必ずしも必要ではありません
+主にポップアップのフィルタリングに使用します
+PCのWebプレーヤーのコメントフィルタ設定からエクスポートしたファイルを直接プログラムディレクトリに入れて使用します
+ファイル名がtv.bilibili.player.xmlになっていることを確認してください。
 
 ## はじめに
-直接运行start.py即可
+start.pyを直接実行する
 
 ### prepare.py
-运行后可以取得运行WEB用户界面必须的一些文件。  
-运行时确保可以直接访问```java```。  
-~~由于死🐴的Cloudflare的防BOT检测，现在已经无法自动更新/下载```compiler.jar```，请去[这里](https://mvnrepository.com/artifact/com.google.javascript/closure-compiler/latest)下载```compiler.jar```，没有该文件将无法进行编译。~~（貌似目前没有防BOT检测）
+実行して、WEB UIの実行に必要なファイルの一部を取得します
+ランタイムは、javaに直接アクセスできることを保証します。  
+クラウドフレアのアンチボット検出が死んでいるため、自動で[compiler.jar](https://mvnrepository.com/artifact/com.google.javascript/closure-compiler/latest)を更新したりダウンロードしたりすることができなくなっています。~~（今のところアンチボットの検出はないようです）
 
 ### WEBユーザーインターフェース
 运行**startwebui.py**后，可以在浏览器访问。  
